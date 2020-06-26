@@ -1,3 +1,132 @@
 *{
-	
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	transition: 0.5s;
+}
+:root{
+	--room-title-color: #F7FBFC;
+	--room-content-color: #ECF3F5;
+}
+body{
+	font-size: 0;
+}
+.container{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.rooms{
+	width: 400vw;
+	height: 100vh;
+}
+.room{
+	width: 100vw;
+	height: 100vh;
+	font-size: 25px;
+	display: inline-block;
+}
+.roomImg {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: bottom;
+}
+#room1 .roomImg{
+	background-image: url(img/room1.jpg);
+}
+#room2 .roomImg{
+	background-image: url(img/room2.jpg);
+}
+#room3 .roomImg{
+	background-image: url(img/room3.jpg);
+}
+#room4 .roomImg{
+	background-image: url(img/room4.jpg);
+}
+.toHome{
+	width: 86px;
+	height: 86px;
+	position: fixed;
+	top: 31px;
+	left: 47px;
+}
+.toHome img {
+	opacity: 0.6;
+	transition: ease-in-out 0.3s;
+}
+.toHome img:hover {
+	opacity: 0.8;
+
+}
+.side {
+  width: 35%;
+  float: right;
+  height: 100%;
+  background: transparent linear-gradient(180deg, rgba(67, 109, 154, 0.53) 0%, rgba(59, 99, 141, 0.74) 100%);
+}
+.content {
+  width: 65%;
+  height: 80%;
+  margin: 140px auto;
+}
+.content h1{
+	color: var(--room-title-color);
+	letter-spacing: 0.65px;
+	text-shadow: 3px 3px 3px #00000078;
+	text-align: center;
+	font-size: 65px;
+	font-family: Baskerville Old Face, regular;
+	line-height: 74px;
+}
+.content p {
+	font-size: 22px;
+	line-height: 40px;
+	font-family: Microsoft Tai Le;
+	color: var(--room-content-color);
+	height: 366px;
+	overflow: hidden;
+	margin-top: 125px;
+}
+.content div {
+	width: 343px;
+	height: 72px;
+	margin: 100px auto;
+	background: rgba(5, 14, 31, 0.41);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.16);
+	border-radius: 6px;
+}
+.content a{
+	text-decoration: none;
+}
+.content a p {
+	font-size: 34px;
+	height: 72px;
+	line-height: 72px;
+	text-align: center;
+	font-family: Microsoft Sans Serif,regular;
+	color: #FFFFFF;
+}
+.orderContainer {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+}
+.orders {
+	width: 8%;
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+}
+.order {
+    border: 3px solid #FFFEFEA1;
+	background-color: transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.orderNow{
+	  background-color: #FFFFFFE3;
 }
