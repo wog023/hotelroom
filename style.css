@@ -27,6 +27,18 @@ body{
 	font-size: 25px;
 	display: inline-block;
 }
+#room1{
+	background-color: #233c5b;
+}
+#room2{
+	background-color: #4b3a36;
+}
+#room3{
+	background-color: #403733;
+}
+#room4{
+	background-color: #73695f;
+}
 .roomImg {
 	height: 100%;
 	width: 100%;
@@ -64,7 +76,18 @@ body{
   width: 35%;
   float: right;
   height: 100%;
-  background: transparent linear-gradient(180deg, rgba(67, 109, 154, 0.53) 0%, rgba(59, 99, 141, 0.74) 100%);
+}
+#room1 .side{
+  background: transparent linear-gradient(180deg, rgba(67, 109, 154, 0.53) 0%, rgba(59, 99, 141, 0.74) 100%);	
+}
+#room2 .side{
+	background: transparent linear-gradient(180deg, #B3897F87 0%, #79544BBA 100%);
+}
+#room3 .side{
+	background: transparent linear-gradient(180deg, #433E3C73 0%, #251D1BBA 100%);
+}
+#room4 .side{
+	background: transparent linear-gradient(180deg, #726255A3 0%, #5C5652B8 100%);
 }
 .content {
   width: 65%;
@@ -89,18 +112,42 @@ body{
 	overflow: hidden;
 	margin-top: 125px;
 }
-.content div {
+.content .more {
 	width: 343px;
 	height: 72px;
 	margin: 100px auto;
-	background: rgba(5, 14, 31, 0.41);
+	
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.16);
 	border-radius: 6px;
 }
-.content a{
+#room1 .more{
+	background: rgba(5, 14, 31, 0.41);
+}
+#room1 .more:hover{
+	background: rgba(5, 14, 31, 0.8);
+}
+#room2 .more{
+	background: #1C13114D;
+}
+#room2 .more:hover{
+	background: #1C13118A;
+}
+#room3 .more{
+	background: #48414080;
+}
+#room3 .more:hover{
+	background: #484140d4;
+}
+#room4 .more{
+	background: #55443770;
+}
+#room4 .more:hover{
+	background: #554437c9;
+}
+.more a{
 	text-decoration: none;
 }
-.content a p {
+.more a p {
 	font-size: 34px;
 	height: 72px;
 	line-height: 72px;
