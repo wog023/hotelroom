@@ -46,16 +46,16 @@ body{
 	background-position: bottom;
 }
 #room1 .roomImg{
-	background-image: url(img/room1.jpg);
+	background-image: url(img2/room1.jpg);
 }
 #room2 .roomImg{
-	background-image: url(img/room2.jpg);
+	background-image: url(img2/room2.jpg);
 }
 #room3 .roomImg{
-	background-image: url(img/room3.jpg);
+	background-image: url(img2/room3.jpg);
 }
 #room4 .roomImg{
-	background-image: url(img/room4.jpg);
+	background-image: url(img2/room4.jpg);
 }
 .toHome{
 	width: 86px;
