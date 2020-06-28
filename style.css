@@ -25,23 +25,25 @@ body{
 	width: 100vw;
 	height: 100vh;
 	font-size: 25px;
-	display: inline-block;
+	display: inline-flex;
+	background-color: #e0e1e2;
 }
 #room1{
-	background-color: #233c5b;
+	/*background-color: #233c5b;*/
 }
 #room2{
-	background-color: #4b3a36;
+	/*background-color: #4b3a36;*/
 }
 #room3{
-	background-color: #403733;
+	/*background-color: #403733;*/
 }
 #room4{
-	background-color: #73695f;
+	/*background-color: #73695f;*/
 }
 .roomImg {
-	height: 100%;
-	width: 100%;
+	height: 90%;
+	width: max(85%,1500px);
+	margin: auto;
 	background-size: cover;
 	background-position: bottom;
 }
@@ -61,8 +63,8 @@ body{
 	width: 86px;
 	height: 86px;
 	position: fixed;
-	top: 31px;
-	left: 47px;
+	top: 8%;
+	left: 9%;
 }
 .toHome img {
 	opacity: 0.6;
@@ -76,6 +78,7 @@ body{
   width: 35%;
   float: right;
   height: 100%;
+	display: flex;
 }
 #room1 .side{
   background: transparent linear-gradient(180deg, rgba(67, 109, 154, 0.53) 0%, rgba(59, 99, 141, 0.74) 100%);	
@@ -90,32 +93,32 @@ body{
 	background: transparent linear-gradient(180deg, #726255A3 0%, #5C5652B8 100%);
 }
 .content {
-  width: 65%;
+  width: 70%;
   height: 80%;
-  margin: 140px auto;
+  margin: auto;
 }
 .content h1{
 	color: var(--room-title-color);
 	letter-spacing: 0.65px;
 	text-shadow: 3px 3px 3px #00000078;
 	text-align: center;
-	font-size: 65px;
+	font-size: 55px;
 	font-family: Baskerville Old Face, regular;
 	line-height: 74px;
 }
 .content p {
-	font-size: 22px;
+	font-size: 16px;
 	line-height: 40px;
 	font-family: Microsoft Tai Le;
 	color: var(--room-content-color);
 	height: 366px;
 	overflow: hidden;
-	margin-top: 125px;
+	margin-top: 23%;
 }
 .content .more {
-	width: 343px;
-	height: 72px;
-	margin: 100px auto;
+	width: 250px;
+	height: 65px;
+	margin: 10% auto;
 	
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.16);
 	border-radius: 6px;
@@ -148,16 +151,16 @@ body{
 	text-decoration: none;
 }
 .more a p {
-	font-size: 34px;
+	font-size: 30px;
 	height: 72px;
-	line-height: 72px;
+	line-height: 65px;
 	text-align: center;
 	font-family: Microsoft Sans Serif,regular;
 	color: #FFFFFF;
 }
 .orderContainer {
     position: fixed;
-    bottom: 50px;
+    bottom: 8%;
     width: 100%;
 }
 .orders {
@@ -176,4 +179,16 @@ body{
 }
 .orderNow{
 	  background-color: #FFFFFFE3;
+}
+
+
+@media (max-width: 1830px) {
+	.content h1 {				
+		font-size: 50px;
+	}
+}
+@media (max-width: 1410px){
+	.content h1{
+		font-size: 40px;
+	}
 }
