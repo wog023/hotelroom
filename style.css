@@ -41,7 +41,7 @@ body{
 	/*background-color: #73695f;*/
 }
 .roomImg {
-	height: 90%;
+	height:max(90%,750px);
 	width: max(85%,1500px);
 	margin: auto;
 	background-size: cover;
@@ -104,7 +104,6 @@ body{
 	text-align: center;
 	font-size: 55px;
 	font-family: Baskerville Old Face, regular;
-	line-height: 74px;
 }
 .content>p {
 	font-size: 16px;
@@ -118,7 +117,7 @@ body{
 .content .more {
 	width: 250px;
 	height: 65px;
-	margin: 10% auto;
+	margin: 15% auto;
 	
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.16);
 	border-radius: 6px;
