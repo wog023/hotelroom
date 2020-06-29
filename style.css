@@ -208,9 +208,9 @@ body{
 	.side {
 		float: unset;
 		width: 100%;
-		height: 30%;
 		position: relative;
-		top: 70vh;
+		height: 35%;
+		top: 65vh;
 	}
 	.container {
 		overflow: unset;
@@ -226,7 +226,8 @@ body{
 	}	
 	.content > p {
 		margin-top: 0;
-		height: 30%;
+		height: 60px;
+		line-height: 30px;
 		text-align: center;
 		overflow: -moz-hidden-unscrollable;
 		display: block;
@@ -235,16 +236,29 @@ body{
 		height: 90%;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+justify-content: space-around;
+	}
+	.content h1 {
+		font-size: 35px;
+		line-height: normal;
 	}
 	.content .more {
 		width: 150px;
 		height: 50px;
-		margin: auto;
+		margin: 0;
 	}
 	.more a p {
 		font-size: 20px;
 		line-height: 50px;
+		height: 50px;
 	}
-
+	.toHome {
+		top: 3%;
+		left: 6%;
+	}
+	.toHome img {
+		width: 60px;
+	}
 
 }
