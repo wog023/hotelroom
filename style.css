@@ -63,8 +63,8 @@ body{
 	width: 86px;
 	height: 86px;
 	position: fixed;
-	top: 8%;
-	left: 9%;
+	top: 8vh;
+	left: 9vw;
 }
 .toHome img {
 	opacity: 0.6;
@@ -186,7 +186,7 @@ body{
 		font-size: 50px;
 	}
 }
-@media (max-width: 1410px){
+@media (max-width: 1600px){
 	.content h1{
 		font-size: 40px;
 	}
@@ -197,6 +197,9 @@ body{
 	.content .more {
 		width: 200px;
 		height: 60px;
+	}
+	.toHome{
+		left:4vw;
 	}
 }
 @media (max-width: 1200px){
