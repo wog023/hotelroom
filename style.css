@@ -26,7 +26,7 @@ body{
 	height: 100vh;
 	font-size: 25px;
 	display: inline-flex;
-	background-color: #e0e1e2;
+	background-color: #ebebeb;
 }
 #room1{
 	/*background-color: #233c5b;*/
@@ -46,6 +46,7 @@ body{
 	margin: auto;
 	background-size: cover;
 	background-position: bottom;
+	position: relative;
 }
 #room1 .roomImg{
 	background-image: url(img2/room1.jpg);
@@ -60,15 +61,27 @@ body{
 	background-image: url(img2/room4.jpg);
 }
 .toHome{
-	width: 86px;
-	height: 86px;
+	width: 100vw;
+	height: 100vh;
 	position: fixed;
-	top: 8vh;
-	left: 9vw;
+	top: 0;
+	left: 0;
+	display: flex;
+	pointer-events: none;
+}
+.toHome-box {
+	height: max(90%,750px);
+	width: max(85%,1500px);
+	margin: auto;
 }
 .toHome img {
+	margin-top: 2%;
+	margin-left: 3%;
 	opacity: 0.6;
 	transition: ease-in-out 0.3s;
+	z-index: 2;
+	position: relative;
+	pointer-events: auto;
 }
 .toHome img:hover {
 	opacity: 0.8;
@@ -167,6 +180,7 @@ body{
 	display: flex;
 	margin: auto;
 	justify-content: space-around;
+	pointer-events: none;
 }
 .order {
     border: 3px solid #FFFEFEA1;
@@ -179,6 +193,44 @@ body{
 .orderNow{
 	  background-color: #FFFFFFE3;
 }
+
+
+.arrow-box {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5%;
+  pointer-events: none;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  /*background-color: black;*/
+  pointer-events: auto;
+}
+.arrow a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.arrow img{
+	width: 100%;
+	filter: drop-shadow(3px 3px 5px #0000007a);
+	opacity: 0.5;
+	transition: 0.3s;
+}
+.arrow img:hover{
+	opacity: 0.8;
+}
+
+
+
 
 
 @media (max-width: 1830px) {
@@ -198,9 +250,7 @@ body{
 		width: 200px;
 		height: 60px;
 	}
-	.toHome{
-		left:4vw;
-	}
+
 }
 @media (max-width: 1200px){
 	.roomImg {
@@ -215,7 +265,7 @@ body{
 		top: 65vh;
 	}
 	.container {
-		overflow: unset;
+		overflow: hidden;
 	}
 	.room {
 		display: block;
@@ -239,7 +289,7 @@ body{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-justify-content: space-around;
+		justify-content: space-around;
 	}
 	.content h1 {
 		font-size: 35px;
@@ -255,12 +305,17 @@ justify-content: space-around;
 		line-height: 50px;
 		height: 50px;
 	}
-	.toHome {
-		top: 3%;
-		left: 6%;
+	.toHome-box {
+	  width: 100%;
+	  height: 100%;
 	}
 	.toHome img {
 		width: 60px;
+		margin-top: 6%;
+		margin-left: 5%;
+	}
+	.arrow img {
+		transform: rotate(90deg);
 	}
 
 }
